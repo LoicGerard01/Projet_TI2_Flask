@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Produits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            width: 30%; /* Chaque élément occupe environ 30% de la largeur */
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Liste des Produits</h1>
+<ul>
+    {% for produit in produits %}
+        <li>{{ produit }}</li>
+    {% endfor %}
+</ul>
+<p><a href="{{ url_for('accueil') }}">Retour à l'accueil</a></p>
+</body>
+</html>

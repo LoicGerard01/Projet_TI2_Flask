@@ -1,0 +1,82 @@
+*{
+    font-family: Georgia;
+
+}
+
+.page{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px; /* Hauteur de l'image */
+    background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
+    background-position: center; /* Centre l'image */
+    border-bottom: 1px solid #e1e4e8; /* Bordure inférieure */
+}
+
+.formulaireGestionProduits {
+    text-align: center;
+    border: 2px solid black;
+    background-color: gainsboro;
+
+
+}
+.affichageGestionProduits{
+    background-color: white;
+}
+
+.card-img-top {
+    width: 90%;
+    height: 250px; /* Hauteur fixe pour chaque image */
+    object-fit: cover; /* Redimensionne l'image pour remplir le conteneur en conservant les proportions */
+
+}
+
+.footerContacts {
+    padding: 0;
+    background: #18283c;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: rgb(41, 24, 24);
+    border: 4px solid;
+}
+
+.footerContacts .contactSection1 {
+    margin-left: 25px;
+    padding-right: 10px;
+    text-align: left;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.footerContacts .contactSection2 {
+    margin-left: 25px;
+    padding-right: 10px;
+    text-align: center;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.footerContacts .contactSection3 {
+    margin-left: 25px;
+    padding-right: 10px;
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+}
+.footerContacts h3 {
+    padding-top: 10px;
+    color: #fbfbfb;
+
+
+}
+.footerContacts li {
+
+    line-height: 25px;
+    color: #fbfbfb;
+    text-decoration: none;
+}
+.footerContacts  li:hover {
+    text-decoration: underline;
+    cursor: default;
+}
